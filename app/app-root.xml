@@ -1,13 +1,13 @@
-<TabView androidTabsPosition="bottom">
-    <TabViewItem title="Home" >
-        <Frame defaultPage="home/home-items-page" />
+<TabView androidTabsPosition="top">
+    <TabViewItem title="Сегодня" >
+        <Frame defaultPage="today/today-page" />
     </TabViewItem>
 
-    <TabViewItem title="Browse" >
-        <Frame defaultPage="browse/browse-page" />
+    <TabViewItem title="Завтра" >
+        <Frame defaultPage="tomorrow/tomorrow-page" />
     </TabViewItem>
 
-    <TabViewItem title="Search" >
-        <Frame defaultPage="search/search-page" />
+    <TabViewItem title="Послезавтра" >
+        <Frame defaultPage="thirdday/thirdday-page" />
     </TabViewItem>
 </TabView>

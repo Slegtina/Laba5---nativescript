@@ -1,0 +1,22 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd"  loaded="{{loaded}}">
+
+    <ActionBar>
+        <Label text="Завтра"/>
+    </ActionBar>
+    
+    <StackLayout backgroundColor="#FFFFFF"  >
+    <Label text="{{date}}"/>
+        <GridLayout columns="*,*" rows="*,*,*,*,*" backgroundColor="#FFFFFF">
+            <Label text="Минимальная Температура" row="0" col="0" />
+            <Label text="{{temp_min}}" row="0" col="1"/>
+            <Label text="Максимальная температура" row="1" col="0" />
+            <Label text="{{temp_max}}" row="1" col="1"/>
+            <Label text="Ощущаемая температура" row="2" col="0" />
+            <Label text="{{feels_like}}" row="2" col="1"/>
+            <Label text="Скорость ветра" row="3" col="0" />
+            <Label text="{{wind_speed}}" row="3" col="1"/>
+            <Label text="Влажность воздуха" row="4" col="0" />
+            <Label text="{{humidity}}" row="4" col="1"/>
+        </GridLayout>
+    </StackLayout>
+</Page>
