@@ -1,13 +1,1 @@
-<TabView androidTabsPosition="top">
-    <TabViewItem title="Сегодня" >
-        <Frame defaultPage="today/today-page" />
-    </TabViewItem>
-
-    <TabViewItem title="Завтра" >
-        <Frame defaultPage="tomorrow/tomorrow-page" />
-    </TabViewItem>
-
-    <TabViewItem title="Послезавтра" >
-        <Frame defaultPage="thirdday/thirdday-page" />
-    </TabViewItem>
-</TabView>
+<Frame defaultPage="/main-page" />

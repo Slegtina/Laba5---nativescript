@@ -1,0 +1,61 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    <StackLayout>
+        <Label text="Выберите город" horizontalAlignment="center" />
+        <ListPicker items="{{ cities }}" selectedIndex="0" loaded="{{onListPickerLoaded}}" />
+        <TabView androidTabsPosition="top">
+            <TabViewItem title="Сегодня" >
+                <StackLayout backgroundColor="#FFFFFF"  >
+                <Label text="{{date1}}"/>
+                    <GridLayout columns="*,*" rows="*,*,*,*,*" backgroundColor="#FFFFFF">
+                        <Label text="Минимальная Температура" row="0" col="0" />
+                        <Label text="{{temp_min1}}" row="0" col="1"/>
+                        <Label text="Максимальная температура" row="1" col="0" />
+                        <Label text="{{temp_max1}}" row="1" col="1"/>
+                        <Label text="Ощущаемая температура" row="2" col="0" />
+                        <Label text="{{feels_like1}}" row="2" col="1"/>
+                        <Label text="Скорость ветра" row="3" col="0" />
+                        <Label text="{{wind_speed1}}" row="3" col="1"/>
+                        <Label text="Влажность воздуха" row="4" col="0" />
+                        <Label text="{{humidity1}}" row="4" col="1"/>
+                    </GridLayout>
+                </StackLayout>
+            </TabViewItem>
+
+            <TabViewItem title="Завтра" >
+                <StackLayout backgroundColor="#FFFFFF"  >
+                <Label text="{{date2}}"/>
+                    <GridLayout columns="*,*" rows="*,*,*,*,*" backgroundColor="#FFFFFF">
+                        <Label text="Минимальная Температура" row="0" col="0" />
+                        <Label text="{{temp_min2}}" row="0" col="1"/>
+                        <Label text="Максимальная температура" row="1" col="0" />
+                        <Label text="{{temp_max2}}" row="1" col="1"/>
+                        <Label text="Ощущаемая температура" row="2" col="0" />
+                        <Label text="{{feels_like2}}" row="2" col="1"/>
+                        <Label text="Скорость ветра" row="3" col="0" />
+                        <Label text="{{wind_speed2}}" row="3" col="1"/>
+                        <Label text="Влажность воздуха" row="4" col="0" />
+                        <Label text="{{humidity2}}" row="4" col="1"/>
+                    </GridLayout>
+                </StackLayout>
+            </TabViewItem>
+
+            <TabViewItem title="Послезавтра" >
+                <StackLayout backgroundColor="#FFFFFF"  >
+                <Label text="{{date3}}"/>
+                    <GridLayout columns="*,*" rows="*,*,*,*,*" backgroundColor="#FFFFFF">
+                        <Label text="Минимальная Температура" row="0" col="0" />
+                        <Label text="{{temp_min3}}" row="0" col="1"/>
+                        <Label text="Максимальная температура" row="1" col="0" />
+                        <Label text="{{temp_max3}}" row="1" col="1"/>
+                        <Label text="Ощущаемая температура" row="2" col="0" />
+                        <Label text="{{feels_like3}}" row="2" col="1"/>
+                        <Label text="Скорость ветра" row="3" col="0" />
+                        <Label text="{{wind_speed3}}" row="3" col="1"/>
+                        <Label text="Влажность воздуха" row="4" col="0" />
+                        <Label text="{{humidity3}}" row="4" col="1"/>
+                    </GridLayout>
+                </StackLayout>
+            </TabViewItem>
+        </TabView>
+    </StackLayout> 
+</Page>
